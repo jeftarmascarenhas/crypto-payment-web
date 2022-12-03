@@ -1,7 +1,7 @@
 export const ROUTES = {
   PUBLIC: {
     ROOT: ``,
-    SIGNIN: `/`,
+    SIGNIN: `/sign-in`,
     SIGNUP: `/sign-up`,
   },
 };

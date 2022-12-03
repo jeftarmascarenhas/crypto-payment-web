@@ -7,7 +7,7 @@ export default function AuthHeader() {
   return (
     <HStack spacing={4}>
       <Text fontSize="2xl" fontWeight="bold" flex={1}>
-        Crypto Payments
+        Crypto Pay
       </Text>
       <HStack spacing={6}>
         <NavLink to={ROUTES.PUBLIC.SIGNUP}>

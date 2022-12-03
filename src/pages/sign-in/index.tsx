@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { LayoutPage } from "next";
-import SignUpInScreen from "@auth//screens/SignUp";
+import SignInScreen from "@auth//screens/SignIn";
 import Auth from "@layouts/Auth";
 
-const Home: LayoutPage = () => {
+const Sign: LayoutPage = () => {
   return (
     <>
       <Head>
@@ -12,11 +12,11 @@ const Home: LayoutPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <SignUpInScreen />
+      <SignInScreen />
     </>
   );
 };
 
-Home.getLayout = (page) => <Auth>{page}</Auth>;
+Sign.getLayout = (page) => <Auth>{page}</Auth>;
 
-export default Home;
+export default Sign;
