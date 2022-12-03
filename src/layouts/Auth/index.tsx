@@ -5,7 +5,7 @@ import { Props } from "./types";
 export default function Auth({ children }: Props) {
   return (
     <VStack
-      px={25}
+      px="16"
       py={4}
       align="stretch"
       overflowY="auto"

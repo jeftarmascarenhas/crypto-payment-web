@@ -1,6 +1,6 @@
 import React from "react";
-import { Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
+import { Link as ChakraLink } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { NavLinkProps } from "./types";
 
@@ -13,6 +13,7 @@ function NavLink({ to, activeProps, children, _hover, ...rest }: NavLinkProps) {
     return (
       <Link href={to}>
         <ChakraLink
+          as="div"
           fontSize="md"
           fontWeight="semibold"
           {...rest}
@@ -28,6 +29,7 @@ function NavLink({ to, activeProps, children, _hover, ...rest }: NavLinkProps) {
   return (
     <Link href={to}>
       <ChakraLink
+        as="div"
         fontSize="md"
         fontWeight="normal"
         {...rest}
