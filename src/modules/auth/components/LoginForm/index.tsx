@@ -8,7 +8,7 @@ import {
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { FormData } from "./type";
+import { FormData } from "./types";
 
 const schema = yup.object({
   email: yup.string().required("required").email("email invalid"),
@@ -42,6 +42,7 @@ export default function LoginForm() {
         </FormControl>
         <FormControl isInvalid={!!errors.password}>
           <Input
+            type="password"
             placeholder="Password"
             {...register("password", { required: "Required" })}
           />
