@@ -1,5 +1,6 @@
 import { HStack, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { ROUTES } from "@configs/routes";
+import NavLink from "@global-components/NavLink/nav-link";
 import React from "react";
 
 export default function AuthHeader() {
@@ -9,12 +10,12 @@ export default function AuthHeader() {
         Crypto Payments
       </Text>
       <HStack spacing={6}>
-        <Link href="/">
+        <NavLink to={ROUTES.PUBLIC.SIGNUP}>
           <Text>Register</Text>
-        </Link>
-        <Link href="/">
+        </NavLink>
+        <NavLink to={ROUTES.PUBLIC.SIGNIN}>
           <Text>Login</Text>
-        </Link>
+        </NavLink>
       </HStack>
     </HStack>
   );
