@@ -5,7 +5,12 @@ import Image from "next/image";
 export default function SignUp() {
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20" py="8">
-      <VStack align="stretch" spacing="8" justify="center">
+      <VStack
+        align="stretch"
+        spacing="8"
+        justify="center"
+        order={{ base: 1, md: 0 }}
+      >
         <Box mb="6">
           <Text as="h2" fontWeight="bold" fontSize="3xl">
             Register
