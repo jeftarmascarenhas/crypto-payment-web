@@ -17,8 +17,7 @@ export default function SignUp() {
           </Text>
           <Text as="h3" fontSize="md" fontWeight="medium" color="gray">
             Crypto Payments is a solution that allows companies and online
-            stores to receive their payments in cryptocurrencies, whether
-            bitcoin or one of the top 10 ranked currencies
+            stores to receive their payments in cryptocurrencies.
           </Text>
         </Box>
         <RegisterForm />
